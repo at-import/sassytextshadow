@@ -6,7 +6,7 @@ Sassy Text Shadow is a Sass mixin that calculates convoluted curvy shadows for c
 
 
 
-Sassy Modular Scale can be used as a [Compass](http://compass-style.org/) [extension](http://compass-style.org/help/tutorials/extensions/) and can be installed as a [Ruby gem](https://rubygems.org/gems/sassy-text-shadow).
+Sassy Text Shadows can be used as a [Compass](http://compass-style.org/) [extension](http://compass-style.org/help/tutorials/extensions/) and can be installed as a [Ruby gem](https://rubygems.org/gems/sassy-text-shadow).
 
 ## Installation
 

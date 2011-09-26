@@ -1,4 +1,4 @@
-require './lib/modular-scale'
+require './lib/sassy-text-shadow'
 
 Gem::Specification.new do |s|
   # Release Specific Information
