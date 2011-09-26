@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.summary = %q{Sassy Text Shadow created curved shadows. Inspired by and adapted from Paul Irish's http://mothereffingtextshadow.com.}
   s.authors = ["Mason Wendell"]
   s.email = ["mason@zivtech.com"]
-  s.homepage = "https://sassymothereffingtextshadow.com"
+  s.homepage = "http://sassymothereffingtextshadow.com"
 
   # Gem Files
   s.files = ["README.mdown"]
   s.files += Dir.glob("lib/**/*.*")
-  s.files += Dir.glob("stylesheets/_sassy-text-shadow.sass")
+  s.files += Dir.glob("stylesheets/_sassy-text-shadow.scss")
 
   # Gem Bookkeeping
   s.required_rubygems_version = ">= 1.3.6"

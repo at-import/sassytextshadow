@@ -3,7 +3,7 @@ Compass::Frameworks.register("sassy-text-shadow", :path => "#{File.dirname(__FIL
 
 module SassyTextShadow
   
-  VERSION = "0.0.1"
+  VERSION = "0.0.2"
   DATE = "2011-09-26"
 
 end
