@@ -1,0 +1,53 @@
+# Sassy Text Shadows
+
+## This is mostly a bad idea.
+
+Sassy Text Shadow is a Sass mixin that calculates convoluted curvy shadows for css3 text-shadow. It can also be used for box-shadow if you're into that kind of thing. 
+
+
+
+Sassy Modular Scale can be used as a [Compass](http://compass-style.org/) [extension](http://compass-style.org/help/tutorials/extensions/) and can be installed as a [Ruby gem](https://rubygems.org/gems/sassy-text-shadow).
+
+## Installation
+
+Usage requires Sass. Visit [sass-lang.com](http://sass-lang.com) to learn more and install.
+
+`gem install sassy-text-shadow`
+
+Then add `require 'sassy-text-shadow'` to your Compass config file.
+
+
+## Usage
+
+
+@function sassy-text-shadow($color, $iterations, $rad, $deg, $cos-i, $sin-i, $color-multiplier) {
+  @include text-shadow(sassy-text-shadow(#b80000, 100, 80, 360, 180, 180, 0));
+
+Once the gem is in place, simply call the `sassy-text-shadow()` function within the compass `@include text-shadow` mixin. Like so: 
+
+h1 {
+  @include text-shadow(sassy-text-shadow(#b80000, 100, 80, 360, 180, 180, 0));
+}
+
+The arguments are, in order:
+
+$color: the starting color of the shadow
+$iterations: how many shadows to generate
+$rad: the radius of the curve
+$deg: how far around the curve to go
+$cos-i: the multiplier for cos()
+$sin-i: the multiplier for sin()
+$color-multiplier: an amount to shift the hue of the color as it iterates
+
+
+
+
+## License
+
+Copyright (c) 2011 [Mason Wendell](http://thecodingdesigner.com/) ([@canarymason](http://twitter.com/canarymason))
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

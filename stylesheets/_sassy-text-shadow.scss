@@ -1,0 +1,20 @@
+@function sassy-text-shadow($color: gray, $iterations: 100, $rad: 50, $deg: 360, $cos-i: 180, $sin-i: 180, $color-multiplier: 0) {
+  $output: '';
+  $end: $iterations;
+  $radius: $rad;
+  @for $i from 1 through $end {
+    $color: rgba($color, ($i / $end));
+    $color: adjust-hue($color, $i * $color-multiplier);
+    $position: $deg / $end * $i;
+    $cos: cos($position * (pi() / $cos-i));
+    $x-position: $radius * $cos;
+    $sin: sin($position * (pi() / $sin-i));
+    $y-position: $radius * $sin;
+    $spread: $i / ($iterations / 10);
+    $output: $output + '#{$color} #{$x-position}px #{$y-position}px #{$spread}px';
+     @if $i < $end {
+       $output: $output + ', ';
+     }
+  }
+  @return unquote($output);
+}

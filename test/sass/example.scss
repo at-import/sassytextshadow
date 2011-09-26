@@ -1,0 +1,18 @@
+// path to local mixin
+@import "compass";
+@import "../../stylesheets/sassy-text-shadow";
+
+body {
+  text-align: center;
+}
+  
+h1 {
+  @include text-shadow(sassy-text-shadow(#b80000));
+  line-height: 8em;
+}
+
+
+h2 {
+  @include text-shadow(sassy-text-shadow(#b80000, 100, 80, 120, 90, -45, 0.09));
+  line-height: 8em;
+}
