@@ -31,13 +31,13 @@ h1 {
 
 The arguments are, in order:
 
-$color: the starting color of the shadow
-$iterations: how many shadows to generate
-$rad: the radius of the curve
-$deg: how far around the curve to go
-$cos-i: the multiplier for cos()
-$sin-i: the multiplier for sin()
-$color-multiplier: an amount to shift the hue of the color as it iterates
+  $color: the starting color of the shadow  
+  $iterations: how many shadows to generate  
+  $rad: the radius of the curve  
+  $deg: how far around the curve to go  
+  $cos-i: the multiplier for cos()  
+  $sin-i: the multiplier for sin()  
+  $color-multiplier: an amount to shift the hue of the color as it iterates  
 
 
 
