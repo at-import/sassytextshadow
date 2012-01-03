@@ -18,3 +18,23 @@
   }
   @return unquote($output);
 }
+
+@function long-shadow($color: gray, $iterations: 100, $spread: 2px, $deg: 45) {
+  $output: '';
+  $color: $color;
+  $end: $iterations;
+  $radius: 0;
+  $start: 180;
+  @for $i from 1 through $end {
+    $radius: $radius + 1;
+    $cos: cos($deg * (pi() / $start));
+    $x-position: $radius * $cos;
+    $sin: sin($deg * (pi() / $start));
+    $y-position: $radius * $sin;
+    $output: $output + '#{$color} #{$x-position}px #{$y-position}px #{$spread}';
+    @if $i < $end {
+      $output: $output + ', ';
+    }
+  }
+  @return unquote($output);
+}
