@@ -2,7 +2,7 @@
 
 ## This is mostly a bad idea.
 
-Sassy Text Shadow is a Sass mixin that calculates convoluted curvy shadows for css3 text-shadow. It can also be used for box-shadow if you're into that kind of thing. 
+Sassy Text Shadow is a Sass mixin that calculates convoluted curvy shadows for css3 text-shadow. It can also be used for box-shadow if you're into that kind of thing.
 
 
 
@@ -10,7 +10,7 @@ Sassy Text Shadows can be used as a [Compass](http://compass-style.org/) [extens
 
 ## Installation
 
-Usage requires Sass. Visit [sass-lang.com](http://sass-lang.com) to learn more and install.
+Usage requires Sass and Compass. Visit [sass-lang.com](http://sass-lang.com) and [compass-style.org](http://compass-style.org) to learn more and install.
 
 `gem install sassy-text-shadow`
 
@@ -19,32 +19,49 @@ Then add `require 'sassy-text-shadow'` to your Compass config file.
 
 ## Usage
 
+### Original (Wavy Shadows)
 
-@function sassy-text-shadow($color, $iterations, $rad, $deg, $cos-i, $sin-i, $color-multiplier) {
-  @include text-shadow(sassy-text-shadow(#b80000, 100, 80, 360, 180, 180, 0));
+`@function sassy-text-shadow($color, $iterations, $rad, $deg, $cos-i, $sin-i, $color-multiplier) `
 
-Once the gem is in place, simply call the `sassy-text-shadow()` function within the compass `@include text-shadow` mixin. Like so: 
+Once the gem is in place, simply call the `sassy-text-shadow()` function within the compass `@include text-shadow` mixin. Like so:
 
-h1 {
-  @include text-shadow(sassy-text-shadow(#b80000, 100, 80, 360, 180, 180, 0));
-}
+    :::scss
+    h1 {
+      @include text-shadow(sassy-text-shadow(#b80000, 100, 80, 360, 180, 180, 0));
+    }
 
 The arguments are, in order:
 
-  $color: the starting color of the shadow  
-  $iterations: how many shadows to generate  
-  $rad: the radius of the curve  
-  $deg: how far around the curve to go  
-  $cos-i: the multiplier for cos()  
-  $sin-i: the multiplier for sin()  
-  $color-multiplier: an amount to shift the hue of the color as it iterates  
+  - $color: the starting color of the shadow
+  - $iterations: how many shadows to generate
+  - $rad: the radius of the curve
+  - $deg: how far around the curve to go
+  - $cos-i: the multiplier for cos()
+  - $sin-i: the multiplier for sin()
+  - $color-multiplier: an amount to shift the hue of the color as it iterates
 
 
+### Long Shadows **NEW**
 
+`@function long-shadow($color: gray, $iterations: 100, $spread: 2px, $deg: 45)`
+
+This function produces long shadows at arbitrary angles.
+
+    :::scss
+    h3 {
+      @include text-shadow(long-shadow(30, #BADA55, 25, 0));
+    }
+
+The arguments are, in order:
+
+  - $deg: the angle of the shadow
+  - $color: the color of the shadow
+  - $iterations: how many shadows to generate
+  - $spread: how much blur to add
 
 ## License
 
-Copyright (c) 2011 [Mason Wendell](http://thecodingdesigner.com/) ([@canarymason](http://twitter.com/canarymason))
+Copyright (c) 2011-2012 [Mason Wendell](http://thecodingdesigner.com/) ([@canarymason](http://twitter.com/canarymason))
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
