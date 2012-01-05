@@ -4,9 +4,11 @@
 
 Sassy Text Shadow is a Sass mixin that calculates convoluted curvy shadows for css3 text-shadow. It can also be used for box-shadow if you're into that kind of thing.
 
-
-
 Sassy Text Shadows can be used as a [Compass](http://compass-style.org/) [extension](http://compass-style.org/help/tutorials/extensions/) and can be installed as a [Ruby gem](https://rubygems.org/gems/sassy-text-shadow).
+
+View the [test](http://dabblet.com/gist/1565787).  
+
+[Sassy Mother Effiing Text Shadow](http://sassymothereffingtextshadow.com/)
 
 ## Installation
 
