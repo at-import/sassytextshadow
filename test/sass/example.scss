@@ -18,6 +18,6 @@ h2 {
 }
 
 h3 {
-  @include text-shadow(long-shadow(#BADA55, 25, 0, 30));
+  @include text-shadow(long-shadow(30, #BADA55, 25, 0));
   line-height: 8em;
 }

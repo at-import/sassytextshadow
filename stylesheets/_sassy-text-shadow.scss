@@ -19,7 +19,7 @@
   @return unquote($output);
 }
 
-@function long-shadow($color: gray, $iterations: 100, $spread: 2px, $deg: 45) {
+@function long-shadow($deg: 45, $color: gray, $iterations: 100, $spread: 2px) {
   $output: '';
   $color: $color;
   $end: $iterations;
