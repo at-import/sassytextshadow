@@ -1,0 +1,11 @@
+{
+  "name": "sassytextshadow",
+  "version": "0.0.4",
+  "main": "stylesheets/_sassy-text-shadow.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test"
+  ]
+}
