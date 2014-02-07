@@ -1,0 +1,5 @@
+{
+  "name": "sassy-text-shadow",
+  "description": "This is mostly a bad idea. Sassy Text Shadow is a Sass mixin that calculates convoluted curvy shadows for css3 text-shadow. It can also be used for box-shadow if you're into that kind of thing.",
+  "tags": ["ui", "shadows"]
+}
